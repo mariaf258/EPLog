@@ -16,7 +16,7 @@
     <div class="contenido-centrado">
       <div class="card-registro">
         <div class="icono-registro">
-          <img src="/public/user-sign-up 1.png" alt="user-blue" class="user-blue" />
+          <img src="/public/user-green 1.png" alt="user-green" class="user-green" />
           <img src="/public/icons-back.png" alt="icons-back" class="icons-back" />
         </div>
 
@@ -24,7 +24,7 @@
         <hr class="linea-registro" />
         <p class="logo-registro">EPLog</p>
 
-        <h4 class="subtitulo-registro">Regístrate</h4>
+        <h4 class="subtitulo-registro">Iniciar Sesión</h4>
 
         <div class="input-group">
           <input type="email" placeholder="Correo Electrónico" />
@@ -37,7 +37,7 @@
 
         <p class="nota">Mínimo 8 caracteres, incluye mayúsculas, minúscula, número y símbolo.</p>
 
-        <button class="btn-blue-registrarse">REGÍSTRATE</button>
+        <button class="btn-green-registrarse">INICIAR SESIÓN</button>
       </div>
     </div>
 
@@ -50,5 +50,5 @@
 </template>
 
 <style>
-@import '/src/assets/registrate.css';
+@import '/src/assets/login.css';
 </style>
