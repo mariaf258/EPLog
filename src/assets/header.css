@@ -1,0 +1,86 @@
+/* .header {
+  background: white;
+  color: #111111;
+  padding: 20px;
+  text-align: left;
+  font-weight: bold;
+} */
+
+/* Navbar general */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* logo a la izq, nav en medio, botones a la der */
+  align-items: center;
+  padding: 15px 20px;
+  background: white;
+  border-bottom: 1px solid #eee;
+  font-family: Arial, sans-serif;
+}
+
+/* Logo */
+.logo {
+  display: flex; /* Coloca la imagen y el texto en fila */
+  align-items: center; /* Centra verticalmente la imagen con el texto */
+  gap: 14px; /* Espacio entre el logo y el texto */
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.logo img.icono-logo {
+  width: 40px; /* puedes ajustar el tamaño */
+  height: 33px;
+  display: inline-block; /* inline para que respete el espacio del texto */
+}
+
+/* Links de navegación */
+.nav-links {
+  display: flex;
+  gap: 20px; /* espacio entre enlaces */
+  margin-left: 52%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #0077ff;
+}
+
+/* Botones */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Botón registro */
+.btn.registro {
+  background: #0077ff;
+  color: white;
+}
+
+.btn.registro:hover {
+  background: #005fcc;
+}
+
+/* Botón login */
+.btn.login {
+  background: #00c896;
+  color: white;
+}
+
+.btn.login:hover {
+  background: #00a87a;
+}

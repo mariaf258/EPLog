@@ -1,0 +1,360 @@
+/* main {
+  background-color: #f5f5f5;
+} */
+
+.app {
+  background-color: #f5f5f5;
+  position: relative; /* referencia para los círculos */
+  z-index: 0;
+}
+
+.circulo-verde1 {
+  width: 200px;
+  height: 200px;
+  background-color: #06d6a0; /* verde */
+  border-radius: 50%;
+  position: absolute;
+  top: 68px; /* ajusta según dónde quieras */
+  right: 150px; /* ajusta según dónde quieras */
+  opacity: 0.2; /* opcional: lo hace más suave */
+  position: absolute;
+  z-index: -1;
+}
+
+.circulo-rojo1 {
+  width: 110px;
+  height: 110px;
+  background-color: #ff6b6b;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  right: 110px;
+  opacity: 0.2;
+  position: absolute;
+  z-index: -1;
+}
+
+.circulo-verde2 {
+  width: 200px;
+  height: 200px;
+  background-color: #06d6a0; /* verde */
+  border-radius: 50%;
+  position: absolute;
+  top: 500px; /* ajusta según dónde quieras */
+  left: 60px; /* ajusta según dónde quieras */
+  opacity: 0.2; /* opcional: lo hace más suave */
+  position: absolute;
+  z-index: -1;
+}
+
+.circulo-rojo2 {
+  width: 110px;
+  height: 110px;
+  background-color: #ff6b6b;
+  border-radius: 50%;
+  position: absolute;
+  top: 600px;
+  left: 190px;
+  opacity: 0.2;
+  position: absolute;
+  z-index: -1;
+}
+
+.circulo-verde3 {
+  width: 200px;
+  height: 200px;
+  background-color: #06d6a0; /* verde */
+  border-radius: 50%;
+  position: absolute;
+  top: 1010px; /* ajusta según dónde quieras */
+  right: 60px; /* ajusta según dónde quieras */
+  opacity: 0.2; /* opcional: lo hace más suave */
+  position: absolute;
+  z-index: -1;
+}
+
+.circulo-rojo3 {
+  width: 110px;
+  height: 110px;
+  background-color: #ff6b6b;
+  border-radius: 50%;
+  position: absolute;
+  top: 1130px;
+  right: 180px;
+  opacity: 0.2;
+  position: absolute;
+  z-index: -1;
+}
+
+.circulo-verde4 {
+  width: 200px;
+  height: 200px;
+  background-color: #06d6a0; /* verde */
+  border-radius: 50%;
+  position: absolute;
+  top: 1480px; /* ajusta según dónde quieras */
+  left: 70px; /* ajusta según dónde quieras */
+  opacity: 0.2; /* opcional: lo hace más suave */
+  position: absolute;
+  z-index: -1;
+}
+
+.circulo-rojo4 {
+  width: 110px;
+  height: 110px;
+  background-color: #ff6b6b;
+  border-radius: 50%;
+  position: absolute;
+  top: 1600px;
+  left: 35px;
+  opacity: 0.2;
+  position: absolute;
+  z-index: -1;
+}
+
+.p1 {
+  color: #111111;
+  font-weight: bold;
+  padding: 0px 0px 0px 40px;
+  font-size: 30px;
+}
+
+.p2 {
+  margin-top: -30px;
+  color: #3a86ff;
+  font-weight: bold;
+  padding: 0px 0px 0px 40px;
+  font-size: 30px;
+}
+
+.p3 {
+  margin-top: -15px;
+  color: #111111;
+  padding: 0px 0px 0px 40px;
+  font-size: 15px;
+}
+
+.card1 {
+  /* background-color: #3a86ff;
+  border-radius: 8px; */
+
+  /* width: 300px;
+  margin: 100px auto 100px auto; */
+  border-radius: 20px;
+  background: rgb(58, 134, 255, 0.3);
+  padding: 20px;
+}
+
+.card2 {
+  width: 300px;
+  margin: 100px auto 100px auto;
+  border-radius: 20px;
+  background: rgb(6, 214, 160, 0.3);
+  padding: 20px;
+}
+
+.card-body {
+  background-color: white;
+  /* border-radius: 8px; */
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); /* sombra suave */
+}
+
+.card-title {
+  font-weight: bold;
+  margin-top: -16%;
+  margin-left: 15%;
+  text-align: center;
+  font-size: 20px;
+  font-family: cursive;
+  margin-bottom: 20px;
+}
+
+.card-title-1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.card-title-2 {
+  font-weight: bold;
+  margin-top: -16%;
+  margin-left: 19%;
+  text-align: center;
+  font-size: 15px;
+  font-family: cursive;
+  margin-bottom: 20px;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.card-text li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.btn-container {
+  /*  text-align: center; */
+  margin-left: 20px;
+}
+
+.btn.registro {
+  background: #3a86ff;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn.registro:hover {
+  background: #2f6dd1;
+}
+
+.frase {
+  background-color: rgb(255, 255, 255, 0.6);
+  color: #111111;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+  align-items: center; /* centra verticalmente */
+  padding: 60px 0; /* espacio interno */
+  margin: 50px auto; /* separación arriba y abajo */
+  /*  max-width: 1000px; */ /* ancho máximo para que no se estire demasiado */
+  /* border-radius: 12px;  */ /* esquinas suaves */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05); /* sombra ligera */
+}
+
+.texto {
+  padding-right: 30px;
+  padding-left: 60px;
+}
+
+.p4 {
+  font-weight: lighter;
+  opacity: 0.6;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.p5 {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.p6 {
+  font-size: 16px;
+  line-height: 1.6; /* mejora legibilidad */
+}
+
+.frase img {
+  width: 250px;
+  height: auto; /* mantiene proporción */
+  justify-self: center; /* centra en su columna */
+  margin-left: 80px;
+}
+
+/* ---------------------------- */
+
+/* 🌀 Efecto Flip 3D para tus cards */
+.card-flip {
+  width: 300px;
+  height: 320px; /* ajusta si tus cards crecen o disminuyen */
+  perspective: 1000px;
+  margin: 100px auto;
+}
+
+.flip-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card-flip:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+/* Lados */
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Frente */
+.flip-front {
+  z-index: 2;
+}
+
+/* Reverso */
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+.birrete-img {
+  background-color: rgb(58, 134, 255, 20%);
+  border-radius: 8px;
+}
+
+.enfoque-img {
+  background-color: rgb(6, 214, 160, 20%);
+  border-radius: 8px;
+}
+
+.calendario-img {
+  background-color: rgb(124, 92, 255, 20%);
+  border-radius: 8px;
+}
+
+.manos-img {
+  background-color: rgb(255, 107, 107, 20%);
+  border-radius: 8px;
+  padding: 9px 0;
+}
+
+.bombillo-img {
+  width: 20%;
+  height: 20%;
+  /* margin-left: 2%; */
+  margin-top: 2%;
+}
+
+.beneficios-img {
+  width: 50%;
+  height: 20%;
+  border-radius: 8px;
+  margin-left: 25%;
+}
+
+/* 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+} */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.grid img {
+  width: 120px;
+  height: auto;
+}
