@@ -17,6 +17,7 @@
       <div class="card-registro">
         <div class="icono-registro">
           <img src="/public/user-sign-up 1.png" alt="user-blue" class="user-blue" />
+          <img src="/public/icons-back.png" alt="icons-back" class="icons-back" />
         </div>
 
         <h3 class="titulo-principal">APRENDE LÓGICA DE PROGRAMACIÓN</h3>

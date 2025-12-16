@@ -104,6 +104,13 @@
   margin: 20px 0;
 }
 
+.icons-back {
+  width: 8%;
+  position: absolute;
+  top: 2%;
+  left: 88%;
+}
+
 /* FOOTER */
 .footer-registrate {
   background: #222;
@@ -232,6 +239,13 @@
   .contenido-centrado {
     margin-top: 27px;
     padding: 0 15px;
+  }
+
+  .icons-back {
+    width: 8%;
+    position: absolute;
+    top: 2%;
+    left: 88%;
   }
 
   .fondo-decoracion {
