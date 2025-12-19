@@ -1,8 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="app">
-    <div class="fondo-decoracion">
+  <div class="app-registrate">
+    <div class="fondo-decoracion-registrate">
       <div class="circulo-verde1-registrate"></div>
       <div class="circulo-rojo1-registrate"></div>
 
@@ -17,7 +17,9 @@
       <div class="card-registro">
         <div class="icono-registro">
           <img src="/public/user-sign-up 1.png" alt="user-blue" class="user-blue" />
-          <img src="/public/icons-back.png" alt="icons-back" class="icons-back" />
+          <router-link to="/" class="">
+            <img src="/public/icons-back.png" alt="icons-back" class="icons-back"
+          /></router-link>
         </div>
 
         <h3 class="titulo-principal">APRENDE LÓGICA DE PROGRAMACIÓN</h3>

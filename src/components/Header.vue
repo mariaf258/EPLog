@@ -2,7 +2,7 @@
 
 <template>
   <header class="navbar">
-    <div class="logo">
+    <div class="logo-navbar">
       <img src="/public/Logotipo.png" alt="Logo EPLog" class="icono-logo" />
       EPLog
     </div>
@@ -14,8 +14,11 @@
     </nav>
 
     <div class="nav-buttons">
-      <a href="#" class="btn registro">Regístrate</a>
-      <a href="#" class="btn login">Iniciar Sesión</a>
+      <!-- <a href="#" class="btn registro">Regístrate</a> -->
+      <router-link to="/registrate" class="btn registro">Regístrate</router-link>
+      <router-link to="/login" class="btn login">Iniciar Sesión</router-link>
+
+      <!-- <a href="#" class="btn login">Iniciar Sesión</a> -->
     </div>
   </header>
 </template>

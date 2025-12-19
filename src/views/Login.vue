@@ -1,8 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="app">
-    <div class="fondo-decoracion">
+  <div class="app-login">
+    <div class="fondo-decoracion-login">
       <div class="circulo-verde1-registrate"></div>
       <div class="circulo-rojo1-registrate"></div>
 
@@ -17,7 +17,9 @@
       <div class="card-registro">
         <div class="icono-registro">
           <img src="/public/user-green 1.png" alt="user-green" class="user-green" />
-          <img src="/public/icons-back.png" alt="icons-back" class="icons-back" />
+          <router-link to="/" class="">
+            <img src="/public/icons-back.png" alt="icons-back" class="icons-back" />
+          </router-link>
         </div>
 
         <h3 class="titulo-principal">APRENDE LÓGICA DE PROGRAMACIÓN</h3>
@@ -36,7 +38,10 @@
         </div>
 
         <p class="nota">Mínimo 8 caracteres, incluye mayúsculas, minúscula, número y símbolo.</p>
-
+        <p class="nota">
+          ¿No tienes cuenta?
+          <router-link to="/registrate" class="question-registrate">Registrate</router-link>
+        </p>
         <button class="btn-green-registrarse">INICIAR SESIÓN</button>
       </div>
     </div>

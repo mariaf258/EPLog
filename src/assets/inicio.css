@@ -2,10 +2,15 @@
   background-color: #f5f5f5;
 } */
 
-.app {
+.app-inicio {
   background-color: #f5f5f5;
   position: relative; /* referencia para los círculos */
   z-index: 0;
+}
+
+.fondo-decoracion-inicio {
+  width: 100%;
+  overflow: hidden;
 }
 
 .circulo-verde1 {
@@ -146,8 +151,8 @@
 }
 
 .card2 {
-  width: 300px;
-  margin: 100px auto 100px auto;
+  /* width: 300px;
+  margin: 100px auto 100px auto; */
   border-radius: 20px;
   background: rgb(6, 214, 160, 0.3);
   padding: 20px;

@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.perfil-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  background: #111;
+  color: #fff;
+}
+
+.logo {
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.menu-title {
+  font-weight: 100;
+  color: rgb(255 255 255 / 60%);
+  margin-top: 25%;
+  margin-bottom: -5%;
+  margin-left: 30px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  opacity: 0.3;
+  background-color: #ddd;
+  color: black;
+}
+
+.menu .activo {
+  font-weight: bold;
+}
+
+span {
+  margin-left: 30px;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  border: 1px solid #ddd;
+  border-bottom: 3px solid #ddd;
+}
+
+.user-grey {
+  width: 50px;
+  margin: 20px;
+}
+
+.perfil-menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.perfil-menu li {
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 5%;
+}
+
+.perfil-menu .activo {
+  font-weight: bold;
+}
+
+.user-bold {
+  width: 2%;
+  margin-top: -5px;
+  left: 22%;
+  position: absolute;
+}
+
+.padlock {
+  width: 2%;
+  margin-top: -5px;
+  left: 22%;
+  position: absolute;
+}
+
+.logout {
+  width: 2%;
+  margin-top: -5px;
+  left: 22%;
+  position: absolute;
+}
+
+/* FORMULARIO */
+
+.perfil-form h2 {
+  margin-top: 10px;
+}
+
+.perfil-form label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
+
+.perfil-form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  background: #f2f2f2;
+  border-radius: 5px;
+  border-bottom: 2px solid #999;
+}
+
+.perfil-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* RADIOS */
+
+.radio-group {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.radio-option input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 3px;
+  height: 5px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  left: 76%;
+  top: 12%;
+}
+
+.radio-option input::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #06d6a0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease;
+}
+
+.radio-option input:checked {
+  border-color: #06d6a0;
+}
+
+.radio-option input:checked::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.radio-sexo {
+  margin-left: -34%;
+  color: #999;
+}
+
+.text-label {
+  color: #999;
+}
+
+/* HEADER */
+.header-perfil {
+  padding: 10px 40px 10px 20px;
+  font-weight: bold;
+  background: #f5f5f5;
+}
+
+/* CUERPO */
+.perfil-body {
+  display: flex;
+  flex: 1;
+}
+
+/* PERFIL INFO */
+.perfil-info {
+  width: 280px;
+  padding: 40px 30px;
+  border-right: 4px solid rgb(224 224 224 / 40%);
+  text-align: center;
+}
+
+/* FORMULARIO */
+.perfil-form {
+  flex: 1;
+  padding: 10px 50px 40px 50px;
+}
+
+.select-camera {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #f2f2f2;
+  border-radius: 50px;
+  background-color: #999;
+  margin-left: 58%;
+  margin-top: -16%;
+}
+
+.camera {
+  width: 20px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+/* BOTON DE GUARDAR */
+.btn-guardar-perfil {
+  margin-left: 84%;
+  margin-top: 30px;
+  padding: 13px;
+  background: linear-gradient(to right, #1e88e5, #1976d2);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-guardar-perfil:hover {
+  opacity: 0.9;
+}
+
+/* FOOTER */
+.footer-perfil {
+  padding: 10px 40px 10px 20px;
+  background: #f5f5f5;
+}

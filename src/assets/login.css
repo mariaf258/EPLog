@@ -1,5 +1,5 @@
 /* GENERAL */
-.app {
+.app-login {
   background-color: #f5f5f5;
   min-height: 100vh;
   display: flex;
@@ -8,7 +8,7 @@
 }
 
 /* FONDO DE CÍRCULOS */
-.fondo-decoracion {
+.fondo-decoracion-login {
   position: absolute;
   top: 0;
   left: 0;
@@ -252,7 +252,7 @@
     left: 88%;
   }
 
-  .fondo-decoracion {
+  .fondo-decoracion-login {
     top: 0;
     left: 0;
     overflow: hidden;
@@ -340,7 +340,7 @@
     padding: 0 15px;
   }
 
-  .fondo-decoracion {
+  .fondo-decoracion-login {
     top: 0;
     left: 0;
     overflow: hidden;
@@ -427,7 +427,7 @@
     padding: 0 15px;
   }
 
-  .fondo-decoracion {
+  .fondo-decoracion-login {
     top: 0;
     left: 0;
     overflow: hidden;

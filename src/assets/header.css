@@ -18,7 +18,7 @@
 }
 
 /* Logo */
-.logo {
+.logo-navbar {
   display: flex; /* Coloca la imagen y el texto en fila */
   align-items: center; /* Centra verticalmente la imagen con el texto */
   gap: 14px; /* Espacio entre el logo y el texto */
@@ -27,7 +27,7 @@
   color: black;
 }
 
-.logo img.icono-logo {
+.logo-navbar img.icono-logo {
   width: 40px; /* puedes ajustar el tamaño */
   height: 33px;
   display: inline-block; /* inline para que respete el espacio del texto */
