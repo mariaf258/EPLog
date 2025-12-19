@@ -1,4 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue'
+
+type Seccion = 'info' | 'password'
+
+const seccionActiva = ref<Seccion>('info')
+</script>
 
 <template>
   <div class="perfil-container">
@@ -7,7 +13,10 @@
       <h1 class="logo">EPLog</h1>
       <h3 class="menu-title">Menú</h3>
       <ul class="menu">
-        <li><span>🏠 Inicio</span></li>
+        <router-link to="/" class="sid-inicio">
+          <li><span>🏠 Inicio</span></li></router-link
+        >
+
         <li><span>📚 Cursos</span></li>
         <li><span>📑 Recursos</span></li>
         <li><span>📈 Mi Progreso</span></li>
@@ -29,10 +38,10 @@
             <img src="/public/camera.png" alt="camera" class="camera" />
           </div>
 
-          <h3>NOMBRE DEL ESTUDIANTE</h3>
+          <h3 class="nombre-estudiante">NOMBRE DEL ESTUDIANTE</h3>
           <p class="grado">Grado</p>
 
-          <ul class="perfil-menu">
+          <!-- <ul class="perfil-menu">
             <li class="activo">
               <img src="/public/user-bold.png" alt="user-bold" class="user-bold" />
               Información Personal
@@ -44,6 +53,28 @@
             <li>
               <img src="/public/logout.png" alt="logout" class="logout" />
               Cerrar Sesión
+            </li>
+          </ul> -->
+
+          <ul class="perfil-menu">
+            <li :class="{ activo: seccionActiva === 'info' }" @click="seccionActiva = 'info'">
+              <img v-if="seccionActiva === 'info'" src="/public/pencil.png" class="lapiz" />
+              <img src="/public/user-bold.png" class="icono" />
+              <span class="texto-perfil">Información Personal</span>
+            </li>
+
+            <li
+              :class="{ activo: seccionActiva === 'password' }"
+              @click="seccionActiva = 'password'"
+            >
+              <img v-if="seccionActiva === 'password'" src="/public/pencil.png" class="lapiz" />
+              <img src="/public/padlock.png" class="icono" />
+              <span class="texto-perfil">Contraseña</span>
+            </li>
+
+            <li class="logout-item">
+              <img src="/public/logout.png" class="icono" />
+              <span class="texto-perfil">Cerrar Sesión</span>
             </li>
           </ul>
         </section>
