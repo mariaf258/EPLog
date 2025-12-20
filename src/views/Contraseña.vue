@@ -1,16 +1,28 @@
 <script setup lang="ts">
-import Sidebar from '@/components/sidebar.vue'
 import { ref } from 'vue'
 
 type Seccion = 'info' | 'password'
 
-const seccionActiva = ref<Seccion>('info')
+const seccionActiva = ref<Seccion>('password')
 </script>
 
 <template>
   <div class="perfil-container">
     <!-- SIDEBAR -->
-    <sidebar />
+    <aside class="sidebar">
+      <h1 class="logo">EPLog</h1>
+      <h3 class="menu-title">Menú</h3>
+      <ul class="menu">
+        <router-link to="/" class="sid-inicio">
+          <li><span>🏠 Inicio</span></li></router-link
+        >
+
+        <li><span>📚 Cursos</span></li>
+        <li><span>📑 Recursos</span></li>
+        <li><span>📈 Mi Progreso</span></li>
+        <li class="activo"><span>⚙️ Mi perfil</span></li>
+      </ul>
+    </aside>
 
     <!-- CONTENIDO DERECHO -->
     <div class="perfil-content">
@@ -33,7 +45,9 @@ const seccionActiva = ref<Seccion>('info')
             <li :class="{ activo: seccionActiva === 'info' }" @click="seccionActiva = 'info'">
               <img v-if="seccionActiva === 'info'" src="/public/pencil.png" class="lapiz" />
               <img src="/public/user-bold.png" class="icono" />
-              <span class="texto-perfil">Información Personal</span>
+              <router-link to="/perfil" class="text-perfil">
+                <span class="texto-perfil">Información Personal</span>
+              </router-link>
             </li>
 
             <li
@@ -42,9 +56,7 @@ const seccionActiva = ref<Seccion>('info')
             >
               <img v-if="seccionActiva === 'password'" src="/public/pencil.png" class="lapiz" />
               <img src="/public/padlock.png" class="icono" />
-              <router-link to="/contraseña" class="text-contra">
-                <span class="texto-perfil">Contraseña</span>
-              </router-link>
+              <span class="texto-perfil">Contraseña</span>
             </li>
 
             <li class="logout-item">
@@ -56,31 +68,26 @@ const seccionActiva = ref<Seccion>('info')
 
         <!-- FORMULARIO -->
         <section class="perfil-form">
-          <h2>Información Personal</h2>
+          <h2 class="title-contraseña">Cambiar la contraseña</h2>
 
-          <div class="radio-group">
-            <label class="radio-option">
-              <input type="radio" name="sexo" checked />
-              <span class="radio-sexo">Mujer</span>
-            </label>
-
-            <label class="radio-option">
-              <input type="radio" name="sexo" />
-              <span class="radio-sexo">Hombre</span>
-            </label>
+          <label class="label-contraseña">Contraseña actual</label>
+          <div class="input-group">
+            <input type="password" placeholder="Contraseña" />
+            <img src="/public/eyes-off.png" alt="eyes-off" class="eyes-off-contraseña" />
           </div>
 
-          <label>Nombre del estudiante</label>
-          <input class="text-label" type="text" placeholder="Ingresa tu nombre completo" />
+          <label>Nueva contraseña</label>
+          <div class="input-group">
+            <input type="password" placeholder="Contraseña" />
+            <img src="/public/eyes-off.png" alt="eyes-off" class="eyes-off-contraseña" />
+          </div>
+          <p class="nota">Mínimo 8 caracteres, incluye mayúsculas, minúscula, número y símbolo.</p>
 
-          <label>Gmail</label>
-          <input class="text-label" type="email" placeholder="correo@ejemplo.com" />
-
-          <label>Grado</label>
-          <input class="text-label" type="text" placeholder="Decimo" />
-
-          <label>Código</label>
-          <input class="text-label" type="text" placeholder="DEC-01" />
+          <label>Confirmar nueva contraseña</label>
+          <div class="input-group">
+            <input type="password" placeholder="Contraseña" />
+            <img src="/public/eyes-off.png" alt="eyes-off" class="eyes-off-contraseña" />
+          </div>
 
           <button class="btn-guardar-perfil">GUARDAR</button>
         </section>
@@ -93,5 +100,5 @@ const seccionActiva = ref<Seccion>('info')
 </template>
 
 <style>
-@import '/src/assets/perfil.css';
+@import '/src/assets/contraseña.css';
 </style>

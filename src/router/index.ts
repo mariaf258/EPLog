@@ -4,6 +4,7 @@ import Inicio from '@/views/Inicio.vue'
 import Registrate from '@/views/Registrate.vue'
 import Login from '@/views/Login.vue'
 import Perfil from '@/views/Perfil.vue'
+import Contraseña from '@/views/Contraseña.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,11 @@ const router = createRouter({
       path: '/perfil',
       name: 'perfil',
       component: Perfil,
+    },
+    {
+      path: '/contraseña',
+      name: 'contraseña',
+      component: Contraseña,
     },
     /* {
       path: '/',
